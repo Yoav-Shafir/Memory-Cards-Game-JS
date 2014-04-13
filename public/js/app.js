@@ -110,7 +110,7 @@
 				startCountingCb = this.startTimer.bind(this);
 				setTimeout(function() {
 					self.moveToPosition(startCountingCb);	
-				}, 2000);
+				}, 500);
 			}
 		}
 	});

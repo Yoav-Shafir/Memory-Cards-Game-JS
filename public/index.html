@@ -60,9 +60,9 @@
 			Timer= Game.config.getClass('Timer'); 
 			Popup= Game.config.getClass('Popup'); 
 			
-		
-			new Game.App(Deck, Timer, Popup).init();
-		
+			setTimeout(function() {
+				new Game.App(Deck, Timer, Popup).init();	
+			}, 1500);
 			
 		})();
 		
