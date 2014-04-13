@@ -160,22 +160,22 @@ header {
 	background-repeat: no-repeat;
 }
 .card[data-type="TYPE_0"] .back {
-	background-image: url('../images/type_0.jpg');
+	background-image: url('../images/TYPE_0.jpg');
 }
 .card[data-type="TYPE_1"] .back {
-	background-image: url('../images/type_1.jpg');
+	background-image: url('../images/TYPE_1.jpg');
 }
 .card[data-type="TYPE_2"] .back {
-	background-image:  url('../images/type_2.jpg');
+	background-image:  url('../images/TYPE_2.jpg');
 }
 .card[data-type="TYPE_3"] .back {
-	background-image: url('../images/type_3.jpg');
+	background-image: url('../images/TYPE_3.jpg');
 }
 .card[data-type="TYPE_4"] .back {
-	background-image: url('../images/type_4.jpg');
+	background-image: url('../images/TYPE_4.jpg');
 }
 .card[data-type="TYPE_5"] .back {
-	background-image: url('../images/type_5.jpg');
+	background-image: url('../images/TYPE_5.jpg');
 }
 a, a:visited {
 	color: #aea;
