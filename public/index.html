@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div id="popup">
+		<div class="popup-content flexbox">	
+
+		</div>
+		<a href="#" class="btn flexbox">Try again!</a>
+	</div>
+
+	<div class="page">
+		
+		<header class="flexbox">
+			<div id="title">Zohari</div>
+		</header>	
+		
+		<div class="content">	
+			<div id="timer" class="flexbox"></div>
+			<section id="game">
+				<div id="cards">
+
+				</div>
+			</section> 
+		</div>
+	</div>
+	
+	<div id="star"></div>
+	<!-- clouds -->
+	<div class="cloud">
+    <div class="cloud-base"></div>
+    <div class="cloud-left"></div>
+    <div class="cloud-right"></div>
+  </div>
+
+	<script src="js/game.js"></script>
+	<script src="js/deck.js"></script>
+	<script src="js/card.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/storage.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		
+		(function() {
+			
+			document.body.addEventListener('touchmove', function(event) {
+  			event.preventDefault();
+			}, false);
+			
+			var Deck, Timer, Popup;
+			Deck = Game.config.getClass('Deck'); 
+			Timer= Game.config.getClass('Timer'); 
+			Popup= Game.config.getClass('Popup'); 
+			
+		
+			new Game.App(Deck, Timer, Popup).init();
+		
+			
+		})();
+		
+	
+	</script>
+</body>
+</html>
